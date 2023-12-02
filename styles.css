@@ -1,0 +1,358 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background:#d8a8ff;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+}
+
+header.logo {
+    position: relative;
+    max-width: 150px;
+
+}
+
+header .navegation ul{
+    position: relative;
+    display: flex;
+}
+
+header .navegation li {
+    list-style: none;
+    
+    
+}
+
+header .navegation li a {
+    color:black;
+    display:inline-block ;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 22px;
+    margin-left: 200px;
+    font-family: 'Sora';
+    font-weight: bold;
+
+}
+
+header .navegation li a:hover {
+    color:palevioletred;
+    transform: scale(1.7);
+    
+
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .text{
+    position: relative;    
+     max-width: 600px;
+     margin-right: 20px;
+}
+.container .text h2{
+    color:#FFF;
+    font-size: 3em;
+    margin-bottom: 10px;
+    line-height:2.9em;
+    font-weight: 760;
+
+}
+.container .text h2 span{
+    font-size: 2.0em;
+    color:#851d86;  
+
+}
+
+.container .text h1 {
+    color :#FFF;
+    font-size: 22PX;
+    font-weight:bold ;
+
+}
+
+.container .text a {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 25px;
+    background:darkorchid;
+    color: #FFF;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out ;
+
+}
+
+.container .text a:hover {
+    transform: translateY(-10px)
+
+}
+
+.icons {
+    position: absolute;
+    bottom:40px;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+
+}   
+
+
+.boxImg {
+    position: absolute;
+    right: 0;   
+    bottom:-10px;
+}
+.boxImg img{
+    width: 700px;
+}
+.boxImg .img1{
+   
+    width: 510px;
+    
+    border-radius: 40%;    
+    margin-top: -2%;
+    
+}
+
+
+
+ /* Estilize as seções que aparecerão ao rolar */
+ .scroll-section {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: opacity 0.8s, transform s;
+}
+
+/* Estilize o efeito ativo */
+.active {
+    opacity: 1500;
+    transform: translateY(0);
+}
+
+.instagram-logo {
+position: fixed;
+bottom: 20px;
+right: -50px; /* Ajuste o valor conforme necessário para esconder o logotipo */
+transition: right 0.3s ease-in-out;
+}
+
+.instagram-logo img {
+width: 50px; /* Ajuste o tamanho do logotipo conforme necessário */
+height: auto;
+cursor: pointer;
+}
+
+/* Quando a página é deslizada, o logotipo desliza para dentro */
+body.scrolled .instagram-logo {
+right: 20px;
+}
+
+
+/*BOTAO VOLTAR TOPO */
+
+#btnVoltarTopo {
+display: none;
+position: fixed;
+bottom: 20px;
+right: 100px;
+z-index: 99;
+font-size: 18px;
+border: none;
+outline: none;
+background-color: #555;
+color: white;
+cursor: pointer;
+padding: 15px;
+border-radius: 50%;
+}
+
+#btnVoltarTopo:hover {
+background-color: #f47607;
+}
+
+
+
+
+
+/* alinhamento do rodape */
+
+.inline-block-container {
+    display: inline-block;
+    width: 100px; /* Largura do bloco */
+    margin-right: 20px; /* Espaço entre os elementos de bloco */
+    text-align: center; /* Alinha o texto horizontalmente no bloco */
+}
+
+.inline-block-text {
+    display: block; /* Coloca o texto em uma nova linha abaixo do bloco */
+}
+
+
+
+.containersomos {
+    display: flex;
+    background-color:#d8a8ff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-right: 50%;
+    
+    
+    
+}
+
+.containersomos2 {
+    display: flex;
+    background-color:#d8a8ff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 50%;
+    
+    
+    
+}
+
+
+img {
+    
+    margin-right: 4%; /* Espaço entre a imagem e o texto */
+    border-radius: 60%;
+}
+
+
+
+
+p{
+    color:black;
+    font-size: 20px;
+    font-family:'Sora';
+    margin-top: 60px;
+    font-weight: BOLD;
+    
+}
+
+/* Adicione os estilos para a página de serviços */
+
+.servicos-container {
+    background-color: #e0bcdd;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.container .servico {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container .servico img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.container .servico h3 {
+    color: #333;
+    margin-top: 10px;
+}
+
+.container .servico p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.rodape {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.rodape .coluna {
+    flex: 1;
+    margin: 10px;
+    text-align: center; /* Adicionado para centralizar o conteúdo */
+}
+
+.rodape p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.rodape h3 {
+    color: darkorchid; /* Cor amarela como destaque para títulos */
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.rodape a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.rodape a:hover {
+    color: darkorchid; /* Cor amarela como destaque no hover */
+}
+
+.rodape ul {
+    list-style: none; /* Removendo marcadores de lista */
+    padding: 0;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Adicionado para centralizar os ícones de redes sociais */
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px; /* Tamanho dos ícones de redes sociais */
+}
+
+.redes-sociais a:hover {
+    color: darkorchid; /* Cor amarela como destaque no hover */
+}
+
+

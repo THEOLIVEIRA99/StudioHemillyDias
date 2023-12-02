@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+
+    .servico {
+      width: 310px;
+      height: 415px; /* Altura fixa */
+      border: 1px solid #ccc;
+      margin: 10px;
+      padding: 15px;
+      text-align: center;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .servico img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .botao-ler-mais,
+    .botao-agende-agora {
+      background-color: black;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #d8a8ff; /* Lilás */
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    #menu {
+      background-color: #d8a8ff; /* Lilás */
+      padding: 20px;
+    }
+
+    #logo {
+      display: block;
+      margin: 0 auto;
+    }
+
+    #nomeEstudio {
+      color:chocolate; /* Branco */
+      font-size: 24px;
+      margin-top: 10px;
+    }
+
+    .rodape {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.rodape .coluna {
+    flex: 1;
+    margin: 10px;
+    text-align: center; /* Adicionado para centralizar o conteúdo */
+}
+
+.rodape p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.rodape h3 {
+    color: darkorchid; /* Cor amarela como destaque para títulos */
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.rodape a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.rodape a:hover {
+    color: darkorchid; /* Cor amarela como destaque no hover */
+}
+
+.rodape ul {
+    list-style: none; /* Removendo marcadores de lista */
+    padding: 0;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Adicionado para centralizar os ícones de redes sociais */
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px; /* Tamanho dos ícones de redes sociais */
+}
+
+.redes-sociais a:hover {
+    color: darkorchid; /* Cor amarela como destaque no hover */
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+}
+
+header.logo {
+    position: relative;
+    max-width: 150px;
+
+}
+
+header .navegation ul{
+    position: relative;
+    display: flex;
+}
+
+header .navegation li {
+    list-style: none;
+    
+    
+}
+
+header .navegation li a {
+    color:black;
+    display:inline-block ;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 22px;
+    margin-left: 200px;
+    font-family: 'Sora';
+    font-weight: bold;
+
+}
+
+header .navegation li a:hover {
+    color:palevioletred;
+    transform: scale(1.7);
+    
+
+}
+
+  </style>
+</head>
+<body>
+  <div id="menu">
+    <a href="index.html">
+      <img id="logo" src="imagens/logohd.png" alt="Logo Studio Hemilly Dias" style="margin-top: 60px;">
+    </a>
+  <header>
+    <nav class="navegation">
+      
+        <ul>
+      
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="servicos.html">SERVIÇOS</a></li>
+            <li><a href="sobrenos.html">SOBRE NÓS </a></li>
+            
+         
+            
+        </ul>
+    </nav>
+</header>
+
+   
+       
+      </div>
+      <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Arial Narrow', Arial, sans-serif; color: darkmagenta;"> CONFIRA NOSSOS SERVIÇOS E AGENDE SEU HORÁRIO.</h1>
+     
+  <div class="container">
+    
+    <div class="servico">
+      <img src="imagens/olho1.png" alt="Cílios Russo">
+      <p><b>Volume Russo:</b> Volume dramático, olhar mais cheio e impactante.</p>
+    
+      <p class="mais-info" style="display:none;">Aqui está mais informação sobre o serviço de Cílios Russo...</p>
+      <button class="botao-agende-agora" onclick="agendeAgora()">Agende Agora</button>
+    </div>
+
+    <div class="servico">
+      <img src="imagens/olho2.png" alt="Manicure">
+      <p><b>Volume Egípcio:</b> Cílios elegantes , proporcionando um olhar cativante.</p>
+    
+      <p class="mais-info" style="display:none;">Aqui está mais informação sobre o serviço de Manicure...</p>
+      <button class="botao-agende-agora" onclick="agendeAgora()">Agende Agora</button>
+    </div>
+
+    <div class="servico">
+        <img src="imagens/olho3.png" alt="Manicure">
+        <p> <b>Volume Brasileiro</b>  Olhar impactante com cílios cheios e bem definidos.</p>
+        
+        <p class="mais-info" style="display:none;">Aqui está mais informação sobre o serviço de Manicure...</p>
+        <button class="botao-agende-agora" onclick="agendeAgora()">Agende Agora</button>
+      </div>
+      <div class="servico">
+        <img src="imagens/olha4.png" alt="Cílios Russo">
+        <p> <B> Volume Híbrido</B>: Combinação de fios leves e mais espessos para um efeito misto.</p>
+       
+        <p class="mais-info" style="display:none;">Aqui está mais informação sobre o serviço de Cílios Russo...</p>
+        <button class="botao-agende-agora" onclick="agendeAgora()">Agende Agora</button>
+      </div>
+  
+      <div class="servico">
+        <img src="imagens/sobra2.png" alt="Manicure">
+        <p> <b> Designer Sobrancelhas: </b> Cuide das suas unhas e deixe suas mãos impecáveis.</p>
+      
+        <p class="mais-info" style="display:none;">Aqui está mais informação sobre o serviço de Manicure...</p>
+        <button class="botao-agende-agora" onclick="agendeAgora()">Agende Agora</button>
+      </div>
+  
+      <div class="servico">
+          <img src="imagens/buço.jpg" alt="Manicure">
+          <p> <b> Depilação de Buço </b> Procedimento de remoção de pelos indesejados na região superior do lábio. Utilização de métodos como cera, pinça ou cremes depilatórios. Pele suave e livre de pelos, realçando a delicadeza facial.Rápido, eficaz e uma opção popular.</p>
+          
+          <p class="mais-info" style="display:none;">Aqui está mais informação sobre o serviço de Manicure...</p>
+          <button class="botao-agende-agora" onclick="agendeAgora()">Agende Agora</button>
+        </div>
+    
+    
+
+      
+    
+
+    <!-- Adicione mais serviços conforme necessário -->
+
+  </div>
+
+
+
+
+
+  <footer class="rodape">
+    <div class="coluna">
+        <h3>Itens Úteis</h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="sobrenos.html">Sobre Nós</a></li>
+           
+        </ul>
+    </div>
+
+    <div class="coluna">
+      <h3>Contato</h3>
+      <p style="font-style: italic;color: aliceblue;">Email: contato@seusite.com</p>
+      <p style="font-style: italic;color: aliceblue;">Telefone: (17) 991664059</p>
+      <p style="font-style: italic;color: aliceblue;">Av. Dr. Hildeberto Albuquerque Ferreira - Centro, Nova Granada - SP, 15440-000</p>
+     
+  </div>
+
+    <div class="coluna">
+      <h3>Redes Sociais</h3>
+      <div class="redes-sociais">
+          <a href="https://www.instagram.com/hemillydias.studio/" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=100006265696446" target="_blank">Facebook</a>
+          <!-- Adicione mais redes sociais conforme necessário -->
+      </div>
+  </div>
+
+  
+</footer>
+
+  <script>
+   
+    //função para agendar horario
+
+    function agendeAgora() {
+    var mensagem = encodeURIComponent("Olá! Gostaria de agendar um serviço no Studio Hemilly Dias. Poderia me fornecer mais informações?");
+    var linkWhatsApp = "https://api.whatsapp.com/send?phone=17991664059&text=" + mensagem;
+
+    window.open(linkWhatsApp, '_blank');
+  }
+  </script>
+
+</body>
+</html>
